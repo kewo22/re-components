@@ -23,6 +23,7 @@ jobs:
         with:
           ref: main
           # token: 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
+          token: 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
       - run: |
           git config user.name KewinFernando
           git config user.email kewinf271@gmail.com
