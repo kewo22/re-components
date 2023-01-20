@@ -17,15 +17,15 @@ jobs:
     name: Create new version ${{ github.event.inputs.version }}
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repo
-        run: git clone git@github.com:kewo22/re-components.git
+      # - name: Clone repo
+        # run: git clone git@github.com:kewo22/re-components.git
       - uses: actions/checkout@v3
         with:
           ref: main
-          token: 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
+          # token: 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
       - run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name KewinFernando
+          git config user.email kewinf271@gmail.com
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
