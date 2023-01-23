@@ -32,4 +32,9 @@ export default defineConfig((configEnv) => ({
       external: [...Object.keys(packageJson.peerDependencies)],
     },
   },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/tests/setup.ts',
+  },
 }))
