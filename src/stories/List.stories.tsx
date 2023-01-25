@@ -1,4 +1,4 @@
-import { ComponentMeta,ComponentStory } from '@storybook/react'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
 // import { List } from 'src/components/List.js'
@@ -20,10 +20,19 @@ const Template: ComponentStory<typeof List> = (args) => <List {...args} /> //{..
 
 export const Default = Template.bind({})
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+const data = [
+  'qdwq dopwjq iodjwdjwidjw',
+  'oerioptui uitri tiert irt',
+  'dbbvdbnbedel jioehue riwje',
+  'ooiuytwtfvhjn kdhsdjad ak od ',
+  'wrtf sjck oscis csab sahix',
+]
+
 Default.args = {
   title: 'Title',
+  data: data,
 }
-
 
 // export const Secondary = Template.bind({})
 // Secondary.args = {

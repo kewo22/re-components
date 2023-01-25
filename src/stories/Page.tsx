@@ -1,9 +1,8 @@
-import './page.css'
+// import './page.css'
 
 import React from 'react'
 
-import { Header } from './Header'
-// import { List } from './List'
+import { List } from '../components/List/List'
 
 type User = {
   name: string
@@ -12,15 +11,23 @@ type User = {
 export const Page: React.VFC = () => {
   const [user, setUser] = React.useState<User>()
 
-  const onSave = (e: any) => {
+  const onSave = (e: string) => {
     // eslint-disable-next-line no-console
     console.log(e)
   }
 
+  const data = [
+    'qdwq dopwjq iodjwdjwidjw',
+    'oerioptui uitri tiert irt',
+    'dbbvdbnbedel jioehue riwje',
+    'ooiuytwtfvhjn kdhsdjad ak od ',
+    'wrtf sjck oscis csab sahix',
+  ]
+
   return (
     <article>
       <h1>wqdwq</h1>
-      {/* <List title='Title List' onSave={onSave} /> */}
+      <List title="Title List" data={data} onSave={onSave} />
       {/* <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
